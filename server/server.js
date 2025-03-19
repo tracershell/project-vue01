@@ -2,6 +2,7 @@ require('dotenv').config();               // dotenv 라이브러리를 이용 �
 const express = require('express');       // express 웹 애플리케이션 프레임워크 모듈 attache
 const http = require('http');             // http 모듈 attatch (node.js 이 기본 모듈)
 const path = require('path');             // path 모듈 attatch (node.js 이 기본 모듈)
+const db = require('./plugins/mysql');
 
 //앱 초기화
 const app = express();                              // express 모듈을 app 에 할당
