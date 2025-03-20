@@ -8,26 +8,27 @@
     "prebuild": "rimraf dist/{js,css,fonts,img}",
     "build": "cross-env VUE_ENV=client vue-cli-service build --no-clean && cross-env VUE_ENV=server vue-cli-service build --no-clean",
     "postbuild": "rimraf dist/index.html"
-
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4", 
     "@mdi/font": "5.9.55",
-    "core-js": "^3.8.3",
+    "core-js": "^3.41.0",
     "dotenv": "^16.4.7",
+    "eta": "^3.5.0",
     "express": "^4.21.2",
     "mysql2": "^3.13.0",
+    "regenerator-runtime": "^0.14.1",
     "roboto-fontface": "*",
-    "vue": "^2.6.14",
+    "vue": "2.7.16",
     "vue-router": "^3.5.1",
     "vue-server-renderer": "^2.7.16",
-    "vuetify": "^2.6.0",
+    "vuetify": "2.7.2",
     "vuex": "^3.6.2",
     "vuex-router-sync": "^5.0.0",
-    "webpack": "5",
+    "webpack": "^5.98.0",
     "webpack-node-externals": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.25.9",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
@@ -35,6 +36,6 @@
     "cross-env": "^7.0.3",
     "rimraf": "^6.0.1",
     "vue-cli-plugin-vuetify": "~2.5.8",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "2.7.16"
   }
 }
