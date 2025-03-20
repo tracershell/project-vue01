@@ -24,3 +24,6 @@ pnpm-debug.log*
 *.sw?
 
 yarn.lock
+
+# Oracle Key 
+OracleKey
